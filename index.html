@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Untuk Firda Kamila Faza 🌷</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,500&family=Dancing+Script:wght@500;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <canvas id="stars"></canvas>
+
+  <main class="stage">
+    <div class="glow"></div>
+
+    <svg id="tulip" viewBox="0 0 300 480" xmlns="http://www.w3.org/2000/svg">
+
+      <!-- Stem -->
+      <path id="stem" class="stem" d="M150,470 C150,470 150,260 150,180" fill="none" stroke="#3a8f5c" stroke-width="6" stroke-linecap="round"/>
+
+      <!-- Leaves -->
+      <path id="leafLeft" class="leaf leaf-left" d="M150,340 C90,330 60,270 70,220 C120,240 150,280 150,340 Z" fill="#3ea86b"/>
+      <path id="leafRight" class="leaf leaf-right" d="M150,390 C215,375 245,320 232,270 C178,290 150,330 150,390 Z" fill="#2f7d51"/>
+
+      <!-- Flower group -->
+      <g id="flower" class="flower">
+        <!-- back petals -->
+        <path class="petal petal-back-l" d="M150,180 C110,160 95,110 118,70 C140,90 150,140 150,180 Z" fill="#e8558f"/>
+        <path class="petal petal-back-r" d="M150,180 C190,160 205,110 182,70 C160,90 150,140 150,180 Z" fill="#e8558f"/>
+        <!-- side petals -->
+        <path class="petal petal-side-l" d="M150,182 C104,168 88,118 108,76 C132,98 148,142 150,182 Z" fill="#f172a1"/>
+        <path class="petal petal-side-r" d="M150,182 C196,168 212,118 192,76 C168,98 152,142 150,182 Z" fill="#f172a1"/>
+        <!-- front petals -->
+        <path class="petal petal-front-l" d="M150,185 C122,172 112,132 128,92 C144,112 150,150 150,185 Z" fill="#ff85b3"/>
+        <path class="petal petal-front-r" d="M150,185 C178,172 188,132 172,92 C156,112 150,150 150,185 Z" fill="#ff85b3"/>
+        <!-- center petal -->
+        <path class="petal petal-center" d="M150,186 C138,150 140,108 150,74 C160,108 162,150 150,186 Z" fill="#ffa9c6"/>
+      </g>
+    </svg>
+
+    <div class="message" id="message">
+      <p class="line line-1" id="line1">haii fakafa</p>
+      <p class="line line-2" id="line2">this is flowers for you</p>
+      <p class="line line-3" id="line3">firda kamila faza</p>
+    </div>
+
+    <button id="replay" class="replay" aria-label="Putar ulang animasi">putar ulang ↺</button>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
